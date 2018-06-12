@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <!-- Basic Page Needs
+        ================================================== -->
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="icon" href="favicon.ico">
+        <title>Sone Aeon Technologies</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        
+        <!-- Template CSS Files
+        ================================================== -->
+        <!-- Twitter Bootstrs CSS -->
+        <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+        <!-- Ionicons Fonts Css -->
+        <link rel="stylesheet" href="plugins/ionicons/ionicons.min.css">
+        <!-- animate css -->
+        <link rel="stylesheet" href="plugins/animate-css/animate.css">
+        <!-- Hero area slider css-->
+        <link rel="stylesheet" href="plugins/slider/slider.css">
+        <!-- owl craousel css -->
+        <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.css">
+        <link rel="stylesheet" href="plugins/owl-carousel/owl.theme.css">
+        <!-- Fancybox -->
+        <link rel="stylesheet" href="plugins/facncybox/jquery.fancybox.css">
+        <!-- template main css file -->
+        <link rel="stylesheet" href="css/style.css">
+
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <link rel="shortcut icon" href="images/sonelogo.png">
+    </head>
+
+    <style>
+
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    background-color: rgba(179,217,255, 0.8);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+</style>
+    <body>
+
+
+        <!--
+        ==================================================
+        Header Section Start
+        ================================================== -->
+        <header id="top-bar" class="navbar-fixed-top animated-header">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+                
+                    <!-- /responsive nav button -->
+                    
+                    <!-- logo -->
+                    <div class="navbar-brand">
+                        <a href="index.html" >
+                            <img src="images/sonelogo.png" alt="Sone Aeon Technologies">
+                        </a>
+                    </div>
+                    <!-- /logo -->
+                </div>
+                <!-- main menu -->
+               
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="row">
+  <div class="overlay-content">
+   <div class="col-md-1"></div>
+   <div class="col-md-5" style="background-image: url('images/bg1.jpg'); background-repeat: no-repeat;color:white;height:250px;padding-top:60px;">
+   <a href="#" style="color:white;text-decoration:none">About</a>
+   </div>
+   <div class="col-md-5" style="background-image: url('images/bg2.jpg');  background-repeat: no-repeat;color:white;height:250px;padding-top:60px;">
+    <a href="#" style="text-decoration:none;color:black">Services</a>
+</div>
+<div class="col-md-1"></div>
+</div>
+</div>
+<div class="row">
+ <div class="col-md-1"></div>
+<div class="col-md-5"  style="background-image: url('images/bg3.jpg');  background-repeat: no-repeat;color:white;height:450px;padding-top:60px;">
+<a href="#" style="text-decoration: none;color:white;text-align: center;">Clients</a>
+</div>
+<div class="col-md-5"  style="background-image: url('images/bg4.jpg');  background-repeat: no-repeat;color:white;height:450px;padding-top:60px;">
+    <a href="#" style="text-decoration: none;color:black;text-align: center;">Contact</a>
+</div>
+ <div class="col-md-1"></div>
+</div>
+  </div>
+
+  <span style="font-size:30px;cursor:pointer;float: right;color: black;" onclick="openNav()">&#9776;</span>
+<br>
+
+
+
+                <!-- /main nav -->
+            </div>
+        </header>
+        
+
+<!--
+==================================================
+Slider Section Start
+================================================== -->
+<section id="hero-area" >
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <div class="block wow fadeInUp" data-wow-delay=".3s">
+                <!-- Slider -->
+                <section class="cd-intro">
+                    <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s" >
+                    <span>WELCOME TO SONE AEON TECHNOLOGIES.</span><br><br>
+                    <span class="cd-words-wrapper">
+                        <b class="is-visible">GRAPHICS DESIGN</b>
+                        <b>WEB DEVELOPMENT</b>
+                        <b>I.T SOLUTIONS</b>
+                        <b>MOBILE APPS DEVELOPMENT</b><br>
+                    </span>
+                    </h1>
+                    </section> <!-- cd-intro -->
+                    <!-- /.slider -->
+                    <h2 class="wow fadeInUp animated" data-wow-delay=".6s" >
+                        We Deliver World-Class Software Solutions with an Imaginative Approach to Software Development.
+                    </h2>
+                    <a class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green" data-wow-delay=".9s" href="#works" data-section="#works">View Works</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!--/#main-slider-->
+
+<!--
+==================================================
+About Section Start
+================================================== -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
+                    <h2>
+                    ABOUT US
+                    </h2>
+                    <p>
+                       Our keywords are digital tranformation, innovation and value creation, both for our own company and for our clients. 
+                    </p>
+                    <p> We have cemented our position as the trusted partner for our clients digital transformation, with the resources, the scale and the know-how that our clients need.
+                </div>
+                
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+                    <img src="images/sonelogo.png" alt="" height="350px" style="margin-left: 100px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!-- /#about -->
+
+
+<!--
+==================================================
+Portfolio Section Start
+================================================== -->
+<section id="works" class="works">
+    <div class="container">
+        <div class="section-heading">
+            <h1 class="title wow fadeInDown" data-wow-delay=".3s">Latest Works</h1>
+            <p class="wow fadeInDown" data-wow-delay=".5s">
+              We have a proven track record of creating powerful and instantly recognisable brands for our clients which can be seen in our case studies.
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 col-xs-12">
+                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
+                    <div class="img-wrapper">
+                        <img src="images/portfolio/item-1.jpg" class="img-responsive" alt="this is a title" >
+                        <div class="overlay">
+                            <div class="buttons">
+                                <a rel="gallery" class="fancybox" href="images/portfolio/item-1.jpg">Demo</a>
+                                <a target="_blank" href="single-portfolio.html">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <figcaption>
+                    <h4>
+                    <a href="#">
+                        Dew Drop
+                    </a>
+                    </h4>
+                    <p>
+                        Redesigne UI Concept
+                    </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <div class="img-wrapper">
+                        <img src="images/portfolio/item-2.jpg" class="img-responsive" alt="this is a title" >
+                        <div class="overlay">
+                            <div class="buttons">
+                                <a rel="gallery" class="fancybox" href="images/portfolio/item-2.jpg">Demo</a>
+                                <a target="_blank" href="single-portfolio.html">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <figcaption>
+                    <h4>
+                    <a href="#">
+                        Bottle Mockup
+                    </a>
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor sit.
+                    </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <div class="img-wrapper">
+                        <img src="images/portfolio/item-3.jpg" class="img-responsive" alt="" >
+                        <div class="overlay">
+                            <div class="buttons">
+                                <a rel="gallery" class="fancybox" href="images/portfolio/item-3.jpg">Demo</a>
+                                <a target="_blank" href="single-portfolio.html">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <figcaption>
+                    <h4>
+                    <a href="#">
+                        Table Design
+                    </a>
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="600ms">
+                    <div class="img-wrapper">
+                        <img src="images/portfolio/item-4.jpg" class="img-responsive" alt="" >
+                        <div class="overlay">
+                            <div class="buttons">
+                                <a rel="gallery" class="fancybox" href="images/portfolio/item-4.jpg">Demo</a>
+                                <a target="_blank" href="single-portfolio.html">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <figcaption>
+                    <h4>
+                    <a href="#">
+                        Make Up elements
+                    </a>
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor.
+                    </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="900ms">
+                    <div class="img-wrapper">
+                        <img src="images/portfolio/item-5.jpg" class="img-responsive" alt="" >
+                        <div class="overlay">
+                            <div class="buttons">
+                                <a rel="gallery" class="fancybox" href="images/portfolio/item-5.jpg">Demo</a>
+                                <a target="_blank" href="single-portfolio.html">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <figcaption>
+                    <h4>
+                    <a href="#">
+                        Shoping Bag Concept
+                    </a>
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor.
+                    </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="1200ms">
+                    <div class="img-wrapper">
+                        <img src="images/portfolio/item-6.jpg" class="img-responsive" alt="" >
+                        <div class="overlay">
+                            <div class="buttons">
+                                <a rel="gallery" class="fancybox" href="images/portfolio/item-6.jpg">Demo</a>
+                                <a target="_blank" href="single-portfolio.html">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <figcaption>
+                    <h4>
+                    <a href="#">
+                        Caramel Bottle
+                    </a>
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor.
+                    </p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section> <!-- #works -->
+<!--
+==================================================
+Portfolio Section Start
+================================================== -->
+<section id="feature">
+    <div class="container">
+        <div class="section-heading">
+            <h1 class="title wow fadeInDown" data-wow-delay=".3s">Offers From Us</h1>
+            
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-lg-4 col-xs-12">
+                <div class="media wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <div class="media-left">
+                        <div class="icon">
+                            <i class="ion-ios-lightbulb-outline"></i>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Creative Designs</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 col-xs-12">
+                <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="600ms">
+                    <div class="media-left">
+                        <div class="icon">
+                            <i class="ion-ios-barcode-outline"></i>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Web Design.</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 col-xs-12">
+                <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="900ms">
+                    <div class="media-left">
+                        <div class="icon">
+                            <i class="ion-ios-keypad-outline"></i>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">App Development.</h4>
+                        <p>Turning Creative Designs to Innovative Development is what we do.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+  <!--       <div class="row">
+            <div class="col-md-4 col-lg-4 col-xs-12">
+                <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1200ms">
+                    <div class="media-left">
+                        <div class="icon">
+                            <i class="ion-ios-americanfootball-outline"></i>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Free updates</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 col-xs-12">
+                <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1500ms">
+                    <div class="media-left">
+                        <div class="icon">
+                            <i class="ion-ios-keypad-outline"></i>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Solid Support</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 col-xs-12">
+                <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1800ms">
+                    <div class="media-left">
+                        <div class="icon">
+                            <i class="ion-ios-barcode-outline"></i>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Simple Installation</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</section> <!-- /#feature -->
+
+
+            <!--
+            ==================================================
+            Call To Action Section Start
+            ================================================== -->
+            <section id="call-to-action">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="block">
+                                <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">SO WHAT DO YOU THINK ?</h1>
+                                <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms"></p>
+                                <a href="contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact Us</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <!--
+            ==================================================
+            Footer Section Start
+            ================================================== -->
+            <footer id="footer">
+                <div class="container">
+                    <div class="col-md-8">
+                        <p class="copyright">Copyright: <span><script>document.write(new Date().getFullYear())</script></span> Design and Developed by <a href="http://www.soneaeon.com" target="_blank">Sone Aeon Technologies</a>. 
+                                                        
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <!-- Social Media -->
+                        <ul class="social">
+                            <li>
+                                <a href="#" class="Facebook">
+                                    <i class="ion-social-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="Twitter">
+                                    <i class="ion-social-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="Linkedin">
+                                    <i class="ion-social-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="Google Plus">
+                                    <i class="ion-social-googleplus"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer> <!-- /#footer -->
+
+	<!-- Template Javascript Files
+	================================================== -->
+	<!-- jquery -->
+	<script src="plugins/jQurey/jquery.min.js"></script>
+	<!-- Form Validation -->
+    <script src="plugins/form-validation/jquery.form.js"></script> 
+    <script src="plugins/form-validation/jquery.validate.min.js"></script>
+	<!-- owl carouserl js -->
+	<script src="plugins/owl-carousel/owl.carousel.min.js"></script>
+	<!-- bootstrap js -->
+	<script src="plugins/bootstrap/bootstrap.min.js"></script>
+	<!-- wow js -->
+	<script src="plugins/wow-js/wow.min.js"></script>
+	<!-- slider js -->
+	<script src="plugins/slider/slider.js"></script>
+	<!-- Fancybox -->
+	<script src="plugins/facncybox/jquery.fancybox.js"></script>
+	<!-- template main js -->
+	<script src="js/main.js"></script>
+
+
+    <script>
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+</script>
+ 	</body>
+</html>
